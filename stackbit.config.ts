@@ -3,6 +3,7 @@ import { defineStackbitConfig } from "@stackbit/types";
 
 export default defineStackbitConfig({
   stackbitVersion: "~0.6.0",
+  ssgName: "nextjs",
   nodeVersion: "18",
   contentSources: [
     new ContentfulContentSource({
@@ -12,5 +13,5 @@ export default defineStackbitConfig({
       accessToken: process.env.CONTENTFUL_MANAGEMENT_TOKEN!,
     }),
   ],
-  modelExtensions: [{ name: "page", type: "page", urlPath: "/{slug}" }],
+  modelExtensions: [{ name: "post", type: "page", urlPath: "/posts/{slug}" }],
 });
