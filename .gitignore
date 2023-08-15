@@ -36,3 +36,5 @@ next-env.d.ts
 
 # stackbit
 .stackbit/*
+# Local Netlify folder
+.netlify

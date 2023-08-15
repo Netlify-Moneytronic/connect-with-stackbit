@@ -26,7 +26,7 @@ export default function Index({ preview, allPosts }) {
               author={heroPost.author}
               slug={heroPost.slug}
               excerpt={heroPost.excerpt}
-              data-sb-object-id={heroPost.sys.id}
+              data-sb-object-id={heroPost.sys?.id || heroPost.contentful_id}
             />
           )}
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
