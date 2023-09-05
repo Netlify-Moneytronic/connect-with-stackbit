@@ -19,7 +19,12 @@ export default function FormPage({}) {
             <h1 className="text-7xl font-bold tracking-tight">Form</h1>
           </section>
           <section className="mx-auto max-w-7xl">
-            <form data-netlify="true" name="form-example" method="post">
+            <form
+              data-netlify="true"
+              action="/success"
+              name="form-example"
+              method="post"
+            >
               <input
                 type="text"
                 id="first_name"
