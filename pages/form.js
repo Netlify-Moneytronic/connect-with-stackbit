@@ -23,7 +23,7 @@ export default function FormPage({}) {
               data-netlify="true"
               action="/success"
               name="form-example"
-              method="post"
+              method="POST"
             >
               <input
                 type="text"
