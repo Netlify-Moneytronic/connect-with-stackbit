@@ -15,6 +15,9 @@ const customMarkdownOptions = (content) => ({
 });
 
 export default function PostBody({ content }) {
+  if (content.raw) {
+    content.json = JSON.parse(content.raw);
+  }
   return (
     <div className="max-w-2xl mx-auto">
       <div className={markdownStyles["markdown"]} data-sb-field-path="content">
